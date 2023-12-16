@@ -2,23 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css"></linkrel>
     <title>Итоговая КТ HTML</title>
 </head>
-<body>
+<body link="white" alink="white" vlink="white">
     <header>
             <div class="logo">CARVILLA</div>
-            <div class="header-item">HOME</div>    
-            <div class="header-item">SERVICE</div>
-            <div class="header-item">FEATURED CARS</div>
-            <div class="header-item">NEW CARS</div>
-            <div class="header-item">BRANDS</div>
-            <div class="header-item contact">CONTACT</div>
+            <div class="header-item"><a class="nav-link" href="#home">HOME</a></div>    
+            <div class="header-item"><a class="nav-link" href="#service">SERVICE</a></div>
+            <div class="header-item"><a class="nav-link" href="#featured-cars">FEATURED CARS</a></div>
+            <div class="header-item"><a class="nav-link" href="#new-cars">NEW CARS</a></div>
+            <div class="header-item"><a class="nav-link" href="#brands">BRANDS</a></div>
+            <div class="header-item contact"><a class="nav-link" href="#contact">CONTACT</a></div>
     </header>
 
     <main>
-        <figure class="firstImg">
+        <figure class="firstImg" id="home">
             <img class="main-background" src="images/welcome-banner.jpg" alt="">
             <div class="background"></div>
             <figcaption>
@@ -27,6 +27,9 @@
                 <div class="contact-us">Contact us</div>
             </figcaption>
         </figure>
+        
+        <div class="margin-b" id="service"></div>
+
         <div class="features">
             <div class="features-item">
                 <i class="bi bi-car-front-fill"></i>
@@ -34,19 +37,19 @@
                 <span class="features-decsription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>                        
             <div class="features-item">
-                <i class="bi bi-car-front-fill"></i>
+                <i class="bi bi-car-front-fill" ></i>
                 <h2>Unlimited Repair Warranty</h2>
                 <span class="features-decsription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>                    
             <div class="features-item">
                 <i class="bi bi-car-front-fill"></i>
-                <h2>Insurance Support</h2>
+                <h2>Unlimited Insurance Support</h2>
                 <span class="features-decsription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>                      
         </div>
-
+        <div class="margin-b" id="new-cars"></div>
         <div class="newest-cars">
-            <p>Checkout the Latest Cars</p>
+            <p class="Заголовок-p">Checkout the Latest Cars</p>
             <h2 class="Заголовок">Newest cars</h2>
             <div class="bigItem">
                 <img class="bigCar" src="images/yellow-chewrolet.png" alt="">
@@ -59,6 +62,168 @@
                     <button class="viewDetails">View Details</button>
                 </div>
             </div>
+        </div>
+        <p class="Заголовок-p">Checkout the Featured Cars</p>
+        <h2 class="Заголовок">Featured cars</h2>
+        <div class="featured-cars">
+            
+            <div class="featured-cars-item">
+                <div class="featured-cars-item-img">
+                    <img src="images/fc1.png" alt="">
+                </div>
+                <div class="featured-cars-item-description">
+                    <p class="description-item">Model: 2017</p>
+                    <p class="description-item">3100Mi</p>
+                    <p class="description-item">240HP</p>
+                    <p class="description-item">automatic</p>
+                </div>
+                <div class="featured-cars-item-description1">
+                    <p class="featured-cars-item-name">BMW 6-Series Gran Coupe</p>
+                    <p class="featured-cars-item-price">$89,395</p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                </div>
+            </div>                
+            <div class="featured-cars-item">
+                <div class="featured-cars-item-img">
+                    <img src="images/fc2.png" alt="">
+                </div>
+                <div class="featured-cars-item-description">
+                    <p class="description-item">Model: 2017</p>
+                    <p class="description-item">3100Mi</p>
+                    <p class="description-item">240HP</p>
+                    <p class="description-item">automatic</p>
+                </div>
+                <div class="featured-cars-item-description1">
+                    <p class="featured-cars-item-name">Chevrolet Camaro WMV20</p>
+                    <p class="featured-cars-item-price">$66,525</p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                </div>
+            </div>                
+            <div class="featured-cars-item">
+                <div class="featured-cars-item-img">
+                    <img src="images/fc3.png" alt="">
+                </div>
+                <div class="featured-cars-item-description">
+                    <p class="description-item">Model: 2017</p>
+                    <p class="description-item">3100Mi</p>
+                    <p class="description-item">240HP</p>
+                    <p class="description-item">automatic</p>
+                </div>
+                <div class="featured-cars-item-description1">
+                    <p class="featured-cars-item-name">Lamborgini V520</p>
+                    <p class="featured-cars-item-price">$125,250</p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                </div>
+            </div>                
+            <div class="featured-cars-item">
+                <div class="featured-cars-item-img">
+                    <img src="images/fc4.png" alt="">
+                </div>
+                <div class="featured-cars-item-description">
+                    <p class="description-item">Model: 2017</p>
+                    <p class="description-item">3100Mi</p>
+                    <p class="description-item">240HP</p>
+                    <p class="description-item">automatic</p>
+                </div>
+                <div class="featured-cars-item-description1">
+                    <p class="featured-cars-item-name">Audi A3 Sedan</p>
+                    <p class="featured-cars-item-price">$95,500</p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                </div>
+            </div>                
+            <div class="featured-cars-item">
+                <div class="featured-cars-item-img">
+                    <img src="images/fc5.png" alt="">
+                </div>
+                <div class="featured-cars-item-description">
+                    <p class="description-item">Model: 2017</p>
+                    <p class="description-item">3100Mi</p>
+                    <p class="description-item">240HP</p>
+                    <p class="description-item">automatic</p>
+                </div>
+                <div class="featured-cars-item-description1">
+                    <p class="featured-cars-item-name">Infiniti Z5</p> 
+                    <p class="featured-cars-item-price">$36,850</p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                </div>
+            </div>                
+            <div class="featured-cars-item">
+                <div class="featured-cars-item-img">
+                    <img src="images/fc6.png" alt="">
+                </div>
+                <div class="featured-cars-item-description">
+                    <p class="description-item">Model: 2017</p>
+                    <p class="description-item">3100Mi</p>
+                    <p class="description-item">240HP</p>
+                    <p class="description-item">automatic</p>
+                </div>
+                <div class="featured-cars-item-description1">
+                    <p class="featured-cars-item-name">Porshe 718 Cayman</p>
+                    <p class="featured-cars-item-price">$48,500</p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                </div>
+            </div>                
+            <div class="featured-cars-item">
+                <div class="featured-cars-item-img">
+                    <img src="images/fc7.png" alt="">
+                </div>
+                <div class="featured-cars-item-description">
+                    <p class="description-item">Model: 2017</p>
+                    <p class="description-item">3100Mi</p>
+                    <p class="description-item">240HP</p>
+                    <p class="description-item">automatic</p>
+                </div>
+                <div class="featured-cars-item-description1">
+                    <p class="featured-cars-item-name">BMW 8-Series Coupe</p>
+                    <p class="featured-cars-item-price">$89,395</p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                </div>
+            </div>                
+            <div class="featured-cars-item">
+                <div class="featured-cars-item-img">
+                    <img src="images/fc8.png" alt="">
+                </div>
+                <div class="featured-cars-item-description">
+                    <p class="description-item">Model: 2017</p>
+                    <p class="description-item">3100Mi</p>
+                    <p class="description-item">240HP</p>
+                    <p class="description-item">automatic</p>
+                </div>
+                <div class="featured-cars-item-description1">
+                    <p class="featured-cars-item-name">BMW X-Series 6</p>
+                    <p class="featured-cars-item-price">$75,800</p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                </div>
+            </div>                   
+        </div>
+        <div class="comments">
+            <h2 class="Заголовок">What Our Clients Say</h2>
+            <div class="comments-container">
+                <div class="comment">
+                    <img src="images/c3.png" alt="">
+                    <p class="comment-text">Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit.</p>
+                    <p class="commentator-name">John Doe <br> Washington</p>
+                </div>                
+                <div class="comment">
+                    <img src="images/c2.png" alt="">
+                    <p class="comment-text">Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit.</p>
+                    <p class="commentator-name">Tomas Lili <br> New York</p>
+                </div>                    
+                <div class="comment">
+                    <img src="images/c1.png" alt="">
+                    <p class="comment-text">Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit.</p>
+                    <p class="commentator-name">Romi Rain <br> London</p>
+                </div>  
+            </div>
+        </div> 
+               
+        <div class="brands"> 
+            <img class="brand" src="images/br1.png" alt="">                               
+            <img class="brand" src="images/br2.png" alt="">                           
+            <img class="brand" src="images/br3.png" alt="">                           
+            <img class="brand" src="images/br4.png" alt="">                           
+            <img class="brand" src="images/br5.png" alt="">                       
+            <img class="brand" src="images/br6.png" alt="">                                  
         </div>
     </main>
 

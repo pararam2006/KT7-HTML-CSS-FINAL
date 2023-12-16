@@ -15,9 +15,14 @@ main {
     width: 100%;
 }
 
+/* Для ноутбуков и планшетов */
+@media screen and (min-width: 1366px) {
+    
+}
+
 header {
-    width: 112%;
-    height: 4%;
+    width: 110.8vw;
+    height: 6%;
     display: flex;
     justify-content: space-between;
     margin-left: -12vw;
@@ -33,16 +38,23 @@ header {
     margin-left: 22vw;
     margin-right: 10vw;
     font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .contact {
-    margin-right: 8vw;
+    margin-right: 2vw;
 }
 .header-item {
-    padding-top: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
     display: inline;
-    vertical-align: text-bottom;
-    height: 20px;
+    height: 1vw;
+    font-size: 1vw;
+}
+
+.nav-link {
+    text-decoration: none;
 }
 
 .firstImg {
@@ -50,47 +62,54 @@ header {
 }
 
 .firstImg figcaption {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     height: 60%;
-    margin-top: -700px ;
+    margin-top: -30vw ;
 }
 
 .background {
     position: absolute;
-    height: 920px;
-    width: 1920px;
+    height: 940px;
+    width: 100%;
     background-color: black;
     opacity: 0.6;   
     z-index: 3;
-    margin-top: -925px; 
+    margin-top: -940px; 
+}
+
+.main-background {
+    width: 100%;
 }
 
 .main-description {
+    position: relative;
     z-index: 3;
     font-size: 50px;
+    font-size: 3vw;
     font-weight: 900;
     color: aliceblue;
-    margin-bottom: 4vh;
-    height: 100px;
+    margin-top: -5vw;
+    height: 5vw;
 }
 
 .main-description-1 {
+    position: relative;
     z-index: 3;
-    font-size: 30px;
+    font-size: 1.8vw;
     font-weight: 700;
     color: aliceblue;
     width: 100%;
-    height: 100px;
-    margin-top: -150px;
+    height: 3.3vw;
+    margin-top: 2vw;
     text-align: center;
 }
 
 .contact-us {
-    margin-top: -15vh;
+    margin-top: 3vw;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -110,18 +129,23 @@ header {
     background-color: rgb(0, 0, 255);
 }
 
+.margin-b {
+    margin-top: 15vh;
+margin-bottom: 15vh;
+}
+
 .features {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-left: 21vw;
     padding-right: 21vw;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-top: 25vw;
 }
 .features-item {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 40vh;
+    height: 23vw;
     width: 18vw;
     border: 1px solid;
     border-color: gray;
@@ -157,16 +181,6 @@ header {
     background-color: #f8f9fb;
 }
 
-.newest-cars p{
-    width: 100%;
-    height: 30px;
-    font-size: 20px;
-    padding-top: 120px;
-    margin-bottom: 0;
-}
-
-
-
 .Заголовок {
     width: 100%;
     font-size: 40px;
@@ -174,9 +188,15 @@ header {
     margin-bottom: 10vh;
 }
 
+.Заголовок-p {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    margin: 0;
+}
 .bigCar {
-    margin-right: 10vw;
-    height: 300px;
+    margin-right: 6vw;
+    height: 18vw;
 }
 
 .bigCar-name {
@@ -207,4 +227,133 @@ header {
     width: 200px;
     height: 50px;
     margin-top: 3vh
+}
+
+
+
+.featured-cars, p, h2{
+    text-align: center;
+}
+
+.featured-cars {
+    margin-left: 5vw;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 20.7vw);
+    column-gap: 10px;
+    grid-template-rows: repeat(2, 24vw);
+    row-gap: 10px;
+    margin-left: 7vw;
+}
+
+.featured-cars-item-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    
+}
+
+.featured-cars-item-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.95vw;
+}
+
+.featured-cars-item-description1 {
+    padding: 0.4vw;
+    font-size: 1.2vw;
+}
+
+.featured-cars-item-description p{
+    border-bottom: 1px solid ;
+    padding: 0.4vw;
+    margin: 0;
+}
+
+.featured-cars-item-img img {
+    height: 7vw;
+}
+
+.description-item{
+    text-align: center;
+}
+
+.featured-cars-item {
+    border: 1px solid;
+}
+
+.featured-cars-item-name {
+    text-align: left;
+}
+
+.featured-cars-item p{
+    margin-top: 0;
+    text-align: left;
+}
+
+.comments {
+    width: 100%;
+    height: 820px;
+    background-color: #f8f9fb;
+}
+
+.comments h2 {
+    padding-top: 9vw;
+    margin-top: 9vw;
+}
+
+.comments-container {
+    padding-left: 12vw;
+    padding-right: 12vw;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.comment {
+    padding-top: 3vw;
+    width: 23vw;
+    height: 25vw;
+    border: 1px solid;
+    border-color: gray;
+}
+
+.comment:hover {
+    background-color: #4e4ffa;
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+.comment h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.comment-text {
+    font-size: 1.6vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.commentator-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 16vw;
+    padding-right: 16vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.brand {
+    height: 5vw;
 }
