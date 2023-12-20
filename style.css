@@ -15,11 +15,6 @@ main {
     width: 100%;
 }
 
-/* Для ноутбуков и планшетов */
-@media screen and (min-width: 1366px) {
-    
-}
-
 header {
     width: 110.8vw;
     height: 6%;
@@ -236,13 +231,11 @@ margin-bottom: 15vh;
 }
 
 .featured-cars {
-    margin-left: 5vw;
     display: inline-grid;
     grid-template-columns: repeat(4, 20.7vw);
     column-gap: 10px;
     grid-template-rows: repeat(2, 24vw);
     row-gap: 10px;
-    margin-left: 7vw;
 }
 
 .featured-cars-item-img {
@@ -294,7 +287,7 @@ margin-bottom: 15vh;
 
 .comments {
     width: 100%;
-    height: 80vw;
+    height: 65vw;
     background-color: #f8f9fb;
 }
 
@@ -315,7 +308,7 @@ margin-bottom: 15vh;
 .comment {
     padding-top: 3vw;
     width: 23vw;
-    height: 32vw;
+    /* height: 32vw; */
     border: 1px solid;
     border-color: gray;
 }
@@ -346,9 +339,9 @@ margin-bottom: 15vh;
 }
 
 .brands {
+    background-color: #343846;
     display: flex;
     justify-content: space-between;
-    height: 10vh;
     padding-left: 16vw;
     padding-right: 16vw;
     padding-top: 3vw;
@@ -438,4 +431,169 @@ margin-bottom: 15vh;
     padding-top: 1.7vw;
 }
 
+/* Для телефонов */
+@media (max-width: 425px) {
+    header {
+        width: 111.7%;
+        height: 3%;
+        padding-top: 0.7vh;
+        padding-bottom: 0.7vh;
+    }
 
+    .logo {
+        font-size: 5vw;
+        margin-left: 16vw;
+        margin-right: 2vw;
+    }   
+
+    .contact {
+        margin-right: 3.3vw;
+    }
+
+    .header-item {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: inline;
+        height: 1vw;
+        font-size: 1.8vw;
+    }
+
+    .main-background {
+        width: 100%;
+        height: 80vw;
+    }
+
+    .main-description {
+        margin-top: -20vw;
+        font-size: 4vw;
+    }
+
+    .main-description-1 {
+        margin-top: -9vw;
+        font-size: 3vw;
+    }
+
+    .contact-us {
+        height: 8vw;
+        width: 40vw;
+        font-size: 4vw;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 90vw;
+        margin: 0;
+        left: 10vw;
+        right: 10vw;
+    }
+
+    .features-item {
+        height: auto;
+        width: 80vw;
+        margin-top: 10vw;
+    }
+
+    .bigItem {
+        flex-direction: column;
+    }
+
+    .bigCar {
+        height: 35vw;
+    }
+
+    .bigCar-name {
+        font-size: 7vw;
+        text-align: left;
+    }
+
+    .bigDescription {
+        width: 80vw;
+    }
+
+    .featured-cars {
+        position: relative;
+        left: 10vw;
+        right: 10vw;
+        grid-template-columns: repeat(1, 80vw);
+        grid-template-rows: repeat(8, 70vw);
+    }
+
+    .featured-cars-item-img img{
+        height: 50%;
+        width: 50%;
+    }
+
+    .description-item {
+        font-size: 4.5vw;
+    }
+
+    .featured-cars-item-name {
+        font-size: 6vw;
+        margin-bottom: 1vw;
+    }
+
+    .featured-cars-item-price {
+        font-size: 4.5vw;
+    }
+
+    .featured-cars-item-description1{
+        font-size: 4.8vw;
+    }
+
+    .comments-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .comment {
+        width: 80vw;
+        flex-direction: column;
+        margin-top: 4vw;
+    }
+
+    .comment-text {
+        font-size: 5vw;
+    }
+
+    .commentator-name {
+        font-size: 6vw
+    }
+
+    .brands {
+        margin-top: 230vw;
+    }
+
+    .fake-footer-column h2 {
+        font-size: 4vw;
+    }
+
+    .main-description-2 {
+        font-size: 3.5vw;
+    }
+
+    .fake-footer {
+        height: 62vw;
+    }
+
+    .fake-footer-ul li {
+        font-size: 3vw;
+    }
+
+    .subscribe {
+        height: 5vw;
+    }
+
+    .bi-arrow-right-circle {
+        left: 95%;
+        margin-top: -7vw;
+    }
+}
+
+/* Для ноутбуков и планшетов */
+@media (min-width: 425px) and (max-width: 1366px) {
+    
+}
