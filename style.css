@@ -236,6 +236,8 @@ margin-bottom: 15vh;
     column-gap: 10px;
     grid-template-rows: repeat(2, 24vw);
     row-gap: 10px;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 
 .featured-cars-item-img {
